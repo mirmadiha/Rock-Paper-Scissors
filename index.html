@@ -8,10 +8,28 @@
 </head>
 <body>
     <main>
-        <h1>Rock Paper Scissors</h1>
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissor</button>
+        <h1 id="heading">Rock Paper Scissors</h1>
+        <h3>Choose:</h3>
+        <div id="buttons">
+        <button class="btn">Rock</button>
+        <button class="btn">Paper</button>
+        <button class="btn">Scissor</button>
+        </div>
+
+        <div id="gamePlay">
+            <div id="userChoice">
+                <h3>User Choice</h3>
+                <img src="images/question.png" alt="question" id="userImg">
+            </div>
+            <div id="computerChoice">
+                <h3>Computer Choice</h3>
+                <img src="images/question.png" alt="question" id="computerImg">
+            </div>
+            <div id="result">
+                <h3>Result</h3>
+                <p id="resultText">Make a choice to start the game</p>
+            </div>
+        </div>
     </main>
     <script src="app.js"></script>
 </body>

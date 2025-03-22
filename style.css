@@ -1,0 +1,35 @@
+body{
+    background-color: #F4F1BB;
+}
+
+#heading{
+    color:#2B303A;
+}
+
+h3{
+    color:#2B303A;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+
+button{
+    width:5rem;
+    height:3rem;
+    background-color: #D64933;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    color:#BAC1B8
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
