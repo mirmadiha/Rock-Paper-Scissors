@@ -1,0 +1,31 @@
+let rock=document.querySelector(".btn1");
+let paper=document.querySelector(".btn2");
+let scissors=document.querySelector(".btn3");
+let userChoiceDisplay=document.querySelector("#userChoice");
+let computerChoiceDisplay=document.querySelector("#computerChoice");
+let resultDisplay=document.querySelector("#winner");
+
+function getComputerChoice(){
+    let choices=["rock","paper","scissors"];
+    return choices[Math.floor(Math.random() * 3)];
+}
+
+function playGround(playerChoice,computerChoice){
+    userChoiceDisplay.innerText='Player Choice: ${playerChoice}';
+    computerChoiceDisplay.innerText='Computer Choice: ${playerChoice}';
+
+    if(playerChoice===computerChoice){
+        resultDisplay.innerText='Its a tie';
+    }
+    elseif(
+        playerChoice==="rock" && computerChoice==="scissor",
+        playerChoice==="paper" && computerChoice==="rock",
+        playerChoice==="scissor" && computerChoice==="paper"
+    )
+    {
+        resultDisplay.innerText='You Win!';
+    }
+    else{
+        resultDisplay.innerText='Computer Wins!';
+    }
+}
