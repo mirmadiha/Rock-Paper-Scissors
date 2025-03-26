@@ -17,7 +17,7 @@ function playGround(playerChoice,computerChoice){
     if(playerChoice===computerChoice){
         resultDisplay.innerText='Its a tie';
     }
-    elseif(
+    else if(
         playerChoice==="rock" && computerChoice==="scissor",
         playerChoice==="paper" && computerChoice==="rock",
         playerChoice==="scissor" && computerChoice==="paper"
@@ -29,3 +29,20 @@ function playGround(playerChoice,computerChoice){
         resultDisplay.innerText='Computer Wins!';
     }
 }
+
+let computerChoice=getComputerChoice();
+rock.addEventListener("click",()=>{
+    playerChoice="rock";
+    playGround(playerChoice,computerChoice);
+})
+
+paper.addEventListener("click",()=>{
+    playerChoice="paper";
+    playGround(playerChoice,computerChoice);
+})
+
+scissor.addEventListener("click",()=>{
+    playerChoice="scissor";
+    playGround(playerChoice,computerChoice);
+})
+
