@@ -11,8 +11,8 @@ function getComputerChoice(){
 }
 
 function playGround(playerChoice,computerChoice){
-    userChoiceDisplay.innerText='Player Choice: ${playerChoice}';
-    computerChoiceDisplay.innerText='Computer Choice: ${playerChoice}';
+    userChoiceDisplay.innerText=playerChoice;
+    computerChoiceDisplay.innerText=computerChoice;
 
     if(playerChoice===computerChoice){
         resultDisplay.innerText='Its a tie';
