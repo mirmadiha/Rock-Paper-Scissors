@@ -41,7 +41,7 @@ paper.addEventListener("click",()=>{
     playGround(playerChoice,computerChoice);
 })
 
-scissor.addEventListener("click",()=>{
+scissors.addEventListener("click",()=>{
     playerChoice="scissor";
     playGround(playerChoice,computerChoice);
 })
